@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/Netstyle.css"><!--Linkando o arquivo css com o html-->
+
+    <!--Responsividade-->
+    <link rel="stylesheet" href="/style/Responsive.css">
+
+    <!--linkando o mainjs para abrir outras páginas-->
+
+
+    <!--Linkando owl css-->
+    <link rel="stylesheet" href="/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/owl.theme.default.min.css">
+
+    <title>CLONEFLIX</title>
+</head>
+
+<body>
+    <header>
+        <!--Topbar contendo o logo e o menu de Séries, Filmes...-->
+        <div class="container">
+            <!--Div que vai conter "duas caixas", uma logo e outra barra de navegação-->
+            <h2 class="logo">NETFLIX</h2>
+            <!--"Logo" da NETFLIX-->
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <!--Elementos da barra de navegação superior-->
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--Também é uma div, mas usaremos para fins gráficos-->
+        <div class="filme-principal">
+            <div class="container">
+                <!--estilo de visualização, mudar em todos da mesma classe-->
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar
+                    Washington</p>
+                <!--Descrição da série principal-->
+                <div class="botoes">
+                    <!--Uma caixa que só contém os botões-->
+                    <button role="button" onClick="clicou()" class="botao">
+                        <i class="fas fa-play"></i><!--peguei do fontawesome copiei e colei aq-->
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" onClick="info()" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="/img/mini1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/mini2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/mini3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/mini4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/mini5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/mini6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/mini7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/mini8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/mini9.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="/img/mini10.jpg" alt="">
+            </div>
+</div>
+    </div>
+    
+    <!--linkando o js sempre por último para evitar erros de execução-->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="/js/owl/jquery.min.js"></script>
+    <script src="/js/owl/owl.carousel.min.js"></script>
+    <script src="/js/owl/setup.js"></script>
+    <script type="text/javascript" src="/js/owl/main.js"></script>
+</body>
+
+</html>
