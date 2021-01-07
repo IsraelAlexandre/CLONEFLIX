@@ -1,0 +1,114 @@
+/*definindo variáveis para quando for mudar as cores, mudar em apenas um local*/
+:root{
+    --vermelho: #E50914; 
+    --preta: #141414;
+}
+
+/*Por padrão o html já viria estilizado, aqui zerei  as margens, padding e box-sizing para estilizar conforme desejo*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background: var(--preta); /*Pinta todo o corpo do site de preto*/
+    font-family: 'Montserrat', Times, serif; /*muda a fonte do texto no corpo do site para Times*/
+    color:white; /*Muda a cor dos textos no corpo que não estão definidas para branco*/
+}
+
+
+
+header .container{
+    display: flex; /*Tira o "Início, Séries..." de baixo do NETFLIX e joga para o lado dele*/
+    flex-direction: row; /*Esse comando já está incluso no de cima por padrão*/
+    align-items: center; /*Alinha os itens Início, Séries.. ao centro, ao lado do NETFLIX*/
+    justify-content: space-between; /*Cria um espaço entre a <h2> e a <nav>,que contém o "Início, Série.."*/
+}
+
+
+header .logo {
+    margin-left: 5px; /*Cria um espaço entre a logo o canto esquerdo da tela da página*/
+    color: var(--vermelho); /*A logo é vermelha*/
+    font-family: 'Arial Black', Times; /*Muda a fonte para Arial Black e, caso não tenha, Times*/
+    font-size: 40px; /*Aumenta o tamanho da fonte para 40px*/
+}
+
+
+/*Mudando a cor dos textos na barra de navegação superior e espaçando 10px a direita para não ficarem coladas*/
+header nav  a{
+    text-decoration: none;
+    color:#AAA; /*Muda o texto para essa cor*/
+    margin-right: 10px; /*Início__10px__Séries__10px__Filmes... Esse comando vai espaçar a direita*/
+}
+
+
+/*Quando passar o mouse em cima dos menuszinhos é para mudar de cor,conforme o site original*/
+header nav a:hover{
+    color:#fff;
+}
+
+.filme-principal{
+    font: size 16px; /*Ajuste do tamanho do título*/
+    background: linear-gradient(rgba(0, 0, 0, .50),rgba(0, 0, 0, .50)100%), url('/img/capa-house.jpg');
+    /*Cria-se uma camada fina de gradiente preto em cima da imagem, nesse caso apenas para dar um contraste entre o texto e a imagem, para que fique bem legível./*A imagem que fica atrás da div que contém o texto*/
+    height:800px; /*Altura da div*/
+    background-size: cover; /*Expande a imagem para ocupar toda a div. Sem esse comando a imagem é duplicada*/
+    display:flex;/*Tirando os botões de baixo da descrição e jogando para o lado*/
+    flex-direction: column; /*empilhando os dois botões um acima do outro abaixo da descrição*/
+    justify-content: center; /*Centraliza todos os elementos na div*/
+    align-items: flex-start; /*Começa o alinhamento da esquerda. O justify content segue a msm direção*/
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px; /*Espaço de 10px entre o "HOUSE OF CARDS" e a descrição*/
+    margin-bottom: 40px; /*Espaço de 40px abaixo da descrição, que fica entre ela e os botões*/
+}
+
+
+
+.titulo{
+    margin-top: 15%; /*Empurra o título 20px para baixo*/
+    font-size: 40px;;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.botao{
+    background-color: rgba(0, 0, 0, .50); /*Pinta os botões com esse degradê de preto*/
+    border: none; /*Retira as bordas padrão dos botões*/
+    color: white; /*Pinta o texto interno do botões de branco*/
+    padding: 15px 30px;/*Cria um espaço entre ot exto e as bordas do elemento 1º Vertical 2ºHorizontal*/
+    margin-right: 15px;/*Botãoa ASSISTIR AGORA___15px___MAISINFORMAÇÕES___!5px_____*/
+    font-size: 12px; /*Reduzindo o tamanho das letras dos botões para 12px*/
+    cursor: pointer;/*Ao passar o mouse por cima, o mouse, que era uma seta, vira uma mãozinha*/
+    transition: .3s ease all; /*Quando passa o mouse por cima ocorre uma transição que dura 3s*/
+}
+
+.botao:hover{ /*Quando passar o mouse por cima os botões mudam*/
+    background-color: white;/*O botão fica branco*/
+    color:black;/*As letras ficam pretas*/ 
+}
+
+.botao i{
+    margin-right: 5px;/*Cria um espaçamento entre o ícone o texto assistir e mais info*/
+}
+
+.container{
+    margin-left: 20px; /*Tudo que tá dentro da div container vai ser afastado 20px do canto esquerdo*/
+} 
+
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px; /*Criar um espaço entre 
+}

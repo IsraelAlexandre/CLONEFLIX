@@ -1,0 +1,18 @@
+@media screen and (min-width: 700px){/*Até 700px será aplicada a formatação abaixo*/
+header .container{
+    display: flex;
+    flex-direction: column;/*Quando diminuir a tela, os botões serão empilhados um abaixo  do outro*/
+    }
+
+    .botao{
+        margin-top: 5px;/*Quando tiver até 700px*/
+        width: 300px;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    .descricao{
+        width: 50%;
+    }
+}
